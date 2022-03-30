@@ -1,0 +1,184 @@
+.container_dark {
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.container_light {
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+@media (min-width: 400px) {
+  .container_light, .container_dark {
+    padding: 3rem 5rem;
+  }
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.title_dark {
+  color: white;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.title_light {
+  color: black;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (min-width: 400px) {
+  .title_light, .title_dark {
+    font-size: 1.5rem;
+  }
+}
+
+.title_light,
+.description_light, .title_dark,
+.description_dark {
+  text-align: left;
+}
+
+.description_dark {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: white;
+}
+
+.description_light {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: black;
+}
+
+@media (min-width: 400px) {
+  .description_dark, .description_light {
+    font-size: 1rem;
+  }
+}
+
+.description_light, .description_dark a {
+  display: block;
+  transition: 0.2s;
+  font-size: 1.2rem;
+  margin-top: 0 20px;
+}
+
+@media (min-width: 400px) {
+  .description_light, .description_dark a {
+    font-size: 1rem;
+  }
+}
+
+.description_dark a svg {
+  margin-left: 10px;
+  height: 15px;
+  width: 15px;
+  color: white;
+}
+
+.description_light a svg {
+  margin-left: 10px;
+  height: 15px;
+  width: 15px;
+  color: black;
+}
+
+.description_light a:hover {
+  padding-left: 5px;
+  transition: 0.2s;
+}
+
+.description_dark a:hover {
+  padding-left: 5px;
+  transition: 0.2s;
+}
+
+.playButton_dark {
+  display: block;
+  margin: 40px 0;
+  padding: 10px;
+  width: 100%;
+  border: solid 1px white;
+  background: black;
+  color: white;
+  text-align: center;
+  transition: 0.2s;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+.playButton_light {
+  display: block;
+  margin: 40px 0;
+  padding: 10px;
+  width: 100%;
+  border: solid 1px black;
+  background: white;
+  color: black;
+  text-align: center;
+  transition: 0.2s;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+@media (min-width: 400px) {
+  .playButton_light, .playButton_dark {
+    width: 100px;
+    font-size: 1rem;
+    font-weight: 500;
+
+  }
+}
+
+.playButton_dark:hover {
+  border: solid 1px black;
+  color: black;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.playButton_light:hover {
+  border: solid 1px white;
+  color: white;
+  background-color: black;
+  transition: 0.2s;
+}
+
+.playButton_dark:focus {
+  border: solid 1px black;
+  color: black;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.playButton_light:focus {
+  border: solid 1px white;
+  color: white;
+  background-color: black;
+  transition: 0.2s;
+}
+
+
