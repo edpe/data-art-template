@@ -288,6 +288,7 @@ function Page({ data }) {
       </div>
       <style jsx>{`
         .button-container {
+          width: 100%;
           display: flex;
           justify-content: space-around;
         }
