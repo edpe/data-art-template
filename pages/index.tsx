@@ -226,7 +226,6 @@ function Page({ data }) {
     Runner.run(runner, engine);
 
     // add To Global
-    window.Matter = Matter;
     window.engine = engine;
     window.runner = runner;
   }
@@ -269,20 +268,43 @@ function Page({ data }) {
       <div className="mx-3 border select-none border-indigo-600p-3">
         fps: {fps}
       </div>
-      <button
-        onClick={() => {
-          generateBalls("up");
-        }}
-      >
-        Next month
-      </button>
-      <button
-        onClick={() => {
-          generateBalls("down");
-        }}
-      >
-        Previous month
-      </button>
+      <div className="button-container">
+        <button
+          className="button"
+          onClick={() => {
+            generateBalls("up");
+          }}
+        >
+          Next month
+        </button>
+        <button
+          className="button"
+          onClick={() => {
+            generateBalls("down");
+          }}
+        >
+          Previous month
+        </button>
+      </div>
+      <style jsx>{`
+        .button-container {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .button {
+          width: 100%;
+          margin: 10px;
+          height: auto;
+          border-radius: 5px;
+          border: none;
+          background-color: #dcdcdc;
+          color: black;
+          font-size: 40px;
+          cursor: pointer;
+          padding: 30px;
+        }
+      `}</style>
     </div>
   );
 }
