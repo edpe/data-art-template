@@ -55,7 +55,7 @@ function Page({ data }) {
       options: {
         width: WIDTH,
         height: HEIGHT,
-        background: "#666",
+        background: "#000",
         showCollisions: false,
         showVelocity: false,
         showAxes: false,
@@ -84,6 +84,9 @@ function Page({ data }) {
         wallBorderWidth,
         {
           isStatic: true,
+          render: {
+            fillStyle: "white",
+          },
         }
       ),
 
@@ -94,6 +97,9 @@ function Page({ data }) {
         wallBorderWidth,
         {
           isStatic: true,
+          render: {
+            fillStyle: "white",
+          },
         }
       ),
       Bodies.rectangle(
@@ -103,6 +109,9 @@ function Page({ data }) {
         wallBorderWidth,
         {
           isStatic: true,
+          render: {
+            fillStyle: "white",
+          },
         }
       ),
       Bodies.rectangle(
@@ -112,6 +121,9 @@ function Page({ data }) {
         wallBorderWidth,
         {
           isStatic: true,
+          render: {
+            fillStyle: "white",
+          },
         }
       ),
       Bodies.rectangle(
@@ -121,6 +133,9 @@ function Page({ data }) {
         wallBorderWidth,
         {
           isStatic: true,
+          render: {
+            fillStyle: "white",
+          },
         }
       ),
       Bodies.rectangle(
@@ -130,11 +145,17 @@ function Page({ data }) {
         wallBorderWidth,
         {
           isStatic: true,
+          render: {
+            fillStyle: "white",
+          },
         }
       ),
       // bottom
       Bodies.rectangle(WIDTH / 2, HEIGHT - 30, WIDTH * 0.93, wallBorderWidth, {
         isStatic: true,
+        render: {
+          fillStyle: "white",
+        },
       }),
 
       // sides
@@ -145,6 +166,9 @@ function Page({ data }) {
         wallLength,
         {
           isStatic: true,
+          render: {
+            fillStyle: "white",
+          },
         }
       ),
       Bodies.rectangle(
@@ -154,6 +178,9 @@ function Page({ data }) {
         wallLength,
         {
           isStatic: true,
+          render: {
+            fillStyle: "white",
+          },
         }
       ),
     ]);
@@ -225,6 +252,9 @@ function Page({ data }) {
           restitution: 1,
           friction: 0.5,
           density: 0.001,
+          render: {
+            fillStyle: "#ffff66",
+          },
         })
       );
     }
